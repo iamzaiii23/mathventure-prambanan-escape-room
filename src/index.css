@@ -109,3 +109,14 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+div[id*="preview-link-manager"],
+iframe[src*="preview"],
+[class*="VitePreview"],
+[id*="VitePreview"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -999999 !important;
+}
