@@ -32,21 +32,17 @@ export default function AuthScreen() {
   return (
     <main className="flex flex-col relative w-full min-h-screen text-on-surface items-center justify-center py-6">
       
-      {/* Latar Belakang Gambar 2D auth-bg dengan Efek Gelap Lembut */}
       <div className="fixed inset-0 z-0">
         <img 
           src={authBg} 
           alt="Latar Belakang Candi" 
           className="w-full h-full object-cover object-center filter brightness-90"
         />
-        {/* Overlay gradasi transparan agar kontras dengan kartu */}
         <div className="absolute inset-0 bg-neutral-950/60 backdrop-blur-[2px]"></div>
       </div>
 
-      {/* Konten Utama Formulir */}
       <div className="relative z-10 flex flex-col w-full px-4 space-y-4 select-none max-w-md mx-auto my-auto">
         
-        {/* Banner / Header Candi */}
         <div className="relative w-full rounded-xl bg-surface-container-low/95 backdrop-blur-md shadow-lg overflow-hidden p-6 flex flex-col items-center text-center border border-amber-900/20">
           
           <div className="relative mt-2 mb-3 flex items-center justify-center">
@@ -70,11 +66,10 @@ export default function AuthScreen() {
             Ekspedisi Matematika Candi Prambanan
           </p>
           <p className="text-xs text-on-surface-variant max-w-xs mt-1">
-            Jelajahi misteri candi kuno abad ke-9 lewat tantangan geometri, aljabar, dan logika seru!
+            Jelajahi misteri candi kuno abad ke-9 lewat tantangan pola bilangan dan logika seru!
           </p>
         </div>
 
-        {/* Mascot Dialogue Card dengan Avatar Mpu Pustaka */}
         <div className="relative w-full rounded-xl bg-surface-container/95 backdrop-blur-md p-4 shadow-md flex items-start space-x-4 border border-amber-900/20">
           <div className="relative flex-shrink-0">
             <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-amber-700 to-amber-400 flex items-center justify-center shadow-md overflow-hidden border-2 border-amber-900/30">
@@ -99,7 +94,6 @@ export default function AuthScreen() {
           </div>
         </div>
 
-        {/* Lontar Form Identitas */}
         <div className="w-full rounded-xl bg-surface-container-lowest/95 backdrop-blur-md p-6 shadow-xl relative overflow-hidden border border-amber-900/20 text-left">
           <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary-container via-surface-container-highest to-primary-container"></div>
           
